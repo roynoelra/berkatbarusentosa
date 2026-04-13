@@ -1,0 +1,508 @@
+/* ================= RESET ================= */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+/* ================= BODY ================= */
+body{
+    font-family:"Segoe UI", Arial, sans-serif;
+    line-height:1.7;
+    color:#2e3f4f;
+    padding-top:90px;
+    background:#ffffff;
+    min-height:100vh;
+}
+
+
+/* ================= CONTAINER ================= */
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.container-column{
+    width:90%;
+    max-width:1000px;
+    margin:auto;
+}
+
+
+/* ================= HEADER ================= */
+header{
+    position:fixed;
+    width:100%;
+    top:0;
+    background:#ffffff;
+    padding:22px 0;
+    transition:all 0.35s ease;
+    z-index:1000;
+}
+
+header.scrolled{
+    padding:14px 0;
+    box-shadow:0 8px 30px rgba(0,0,0,0.08);
+}
+
+.logo{
+    color:#1b2d3a;
+    font-weight:700;
+    letter-spacing:0.6px;
+}
+
+
+/* ================= NAVIGATION ================= */
+nav{
+    display:flex;
+    align-items:center;
+}
+
+nav a,
+.dropbtn{
+    color:#2e3f4f;
+    font-weight:500;
+    margin-left:28px;
+    text-decoration:none;
+    position:relative;
+    transition:all 0.3s ease;
+    cursor:pointer;
+}
+
+nav a::after,
+.dropbtn::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:-6px;
+    width:0%;
+    height:2px;
+    background:#1b2d3a;
+    transition:width 0.3s ease;
+}
+
+nav a:hover::after,
+.dropbtn:hover::after{
+    width:100%;
+}
+
+nav a.active{
+    color:#1b2d3a;
+    font-weight:600;
+}
+
+
+/* ================= DROPDOWN ================= */
+.dropdown{
+    position:relative;
+}
+
+.dropdown-content{
+    display:none;
+    position:absolute;
+    top:100%;
+    background:#ffffff;
+    border-radius:8px;
+    box-shadow:0 15px 35px rgba(0,0,0,0.08);
+    min-width:240px;
+    overflow:hidden;
+}
+
+.dropdown-content a{
+    display:block;
+    padding:12px 18px;
+    color:#2e3f4f;
+}
+
+.dropdown-content a:hover{
+    background:#f4f6f8;
+}
+
+.dropdown:hover .dropdown-content{
+    display:block;
+}
+
+
+/* ================= HERO ================= */
+.hero{
+    height:100vh;
+    position:relative;
+    overflow:hidden;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+    
+}
+
+/* ================= HERO CONTENT ================= */
+
+.hero-content{
+    max-width:850px;
+    padding:0 20px;
+    animation:fadeUp 1.2s ease forwards;
+}
+
+.hero h2{
+    font-size:48px;
+    margin-bottom:20px;
+    font-weight:700;
+    line-height:1.2;
+}
+
+.hero p{
+    font-size:18px;
+    margin-bottom:45px;
+    opacity:0.95;
+}
+
+.hero button{
+    padding:16px 50px;
+    border:none;
+    background:#1b2d3a;
+    color:white;
+    font-size:16px;
+    border-radius:50px;
+    cursor:pointer;
+    transition:all 0.3s ease;
+    box-shadow:0 12px 30px rgba(0,0,0,0.35);
+}
+
+.hero button:hover{
+    transform:translateY(-6px);
+    box-shadow:0 20px 45px rgba(0,0,0,0.45);
+    background:#14212b;
+}
+
+/* ===== HERO BACKGROUND IMAGE (DITAMBAHKAN) ===== */
+.hero::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:
+    linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
+    url("../img/hero.jpg")
+    no-repeat center center/cover;
+    z-index:-1;
+}
+
+
+/* ================= SUB HERO ================= */
+.sub-hero{
+    padding:140px 20px 80px 20px;
+    text-align:center;
+    color:white;
+    background:linear-gradient(120deg,#0f2027,#203a43,#2c5364);
+
+    opacity:0;
+    transform:translateY(40px);
+    animation:fadeUp 1s ease forwards;
+}
+
+.sub-hero h2{
+    font-size:42px;
+    font-weight:700;
+}
+
+
+/* ================= KEYFRAME ================= */
+@keyframes fadeUp{
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+
+/* ================= CONTENT ================= */
+section{
+    padding:80px 20px;
+}
+
+
+/* ================= WHY CHOOSE US ================= */
+.why-us{
+    padding:25px 20px;
+    background:#ffffff;
+    text-align:center;
+}
+
+.why-title p{
+    font-size:25px;
+    letter-spacing:3px;
+    color:#888;
+    margin-bottom:10px;
+}
+
+.why-title h2{
+    font-size:36px;
+    margin-bottom:70px;
+    color:#1b2d3a;
+}
+
+.why-container{
+    max-width:1100px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    gap:50px;
+}
+
+.why-box{
+    width:33%;
+}
+
+.why-box img{
+    width:105px;
+    margin-bottom:20px;
+}
+
+.why-box h3{
+    margin-bottom:10px;
+    font-size:18px;
+}
+
+.why-box p{
+    color:#666;
+    font-size:15px;
+    line-height:1.6;
+}
+
+/* ================= CLIENT LOGO SLIDER ================= */
+
+.clients{
+    padding:10px 10px;
+    background:#ffffff;
+    text-align:center;
+    overflow:hidden;
+}
+
+.clients-title h2{
+    font-size:34px;
+    margin-bottom:10px;
+    color:#1b2d3a;
+}
+
+.clients-title p{
+    color:#777;
+    margin-bottom:60px;
+}
+
+.clients-slider{
+    width:100%;
+    overflow:hidden;
+}
+
+.clients-track{
+    display:flex;
+    gap:60px;
+    width:max-content;
+    animation:scrollClients 25s linear infinite;
+}
+
+.clients-track img{
+    height:150px;
+    max-width:150px;
+    object-fit:contain;
+    filter:grayscale(100%);
+    opacity:0.8;
+    transition:0.3s;
+}
+
+.clients-track img:hover{
+    filter:grayscale(0%);
+    opacity:1;
+}
+
+@keyframes scrollClients{
+    from{
+        transform:translateX(0);
+    }
+    to{
+        transform:translateX(-50%);
+    }
+    
+}
+
+/* ================= FOOTER ================= */
+footer{
+    background:linear-gradient(to right,#1b2d3a,#224b6b);
+    color:white;
+    padding:60px 8%;
+}
+
+.footer-links{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    gap:60px;
+    flex-wrap:wrap;
+}
+
+.footer-column{
+    flex:1;
+    min-width:220px;
+}
+
+.footer-column h4{
+    margin-bottom:12px;
+    font-size:16px;
+    border-bottom:2px solid rgba(255,255,255,0.3);
+    padding-bottom:12px;
+}
+
+.footer-column a{
+    display:block;
+    color:#e0e0e0;
+    text-decoration:none;
+    margin-bottom:10px;
+    font-size:14px;
+    transition:0.3s;
+}
+
+.footer-column a:hover{
+    color:white;
+    transform:translateX(5px);
+}
+
+.footer-column ul{
+    list-style:none;
+    padding:0;
+    margin:0;
+}
+
+.footer-column li{
+    margin-bottom:10px;
+}
+
+.footer-icons{
+    display:flex;
+    justify-content:flex-start;
+    align-items:center;
+    gap:23px;
+    margin-top:-12px;
+}
+
+.footer-icons a{
+    font-size:37px;
+    color:#e0e0e0;
+    transition:0.3s;
+}
+
+.footer-icons a:hover{
+    color:white;
+    transform:scale(1.2);
+}
+
+
+/* ================= FOOTER CONTACT ================= */
+.footer-contact{
+    margin-bottom:25px;
+    text-align:center;
+}
+
+.footer-contact p{
+    margin-bottom:15px;
+    font-weight:490;
+    font-size:20px;
+    letter-spacing:0.4px;
+}
+
+
+/* ================= COPYRIGHT ================= */
+.footer-bottom{
+    font-size:12px;
+    opacity:0.5;
+    margin-top:18px;
+    display:flex;
+    justify-content:flex-start;
+}
+
+
+/* ================= RESPONSIVE ================= */
+@media (max-width:768px){
+
+.container{
+    flex-direction:column;
+    gap:15px;
+}
+
+nav{
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+nav a,
+.dropbtn{
+    margin:8px 10px;
+}
+
+.hero h2{
+    font-size:28px;
+}
+
+.hero p{
+    font-size:15px;
+}
+
+.hero button{
+    padding:12px 30px;
+    font-size:14px;
+}
+
+.sub-hero h2{
+    font-size:30px;
+}
+
+section{
+    padding:60px 20px;
+}
+
+.footer-links{
+    flex-direction:column;
+    gap:40px;
+}
+
+.footer-column{
+    width:100%;
+}
+
+}
+
+
+/* ============ STRUKTUR ORGANISASI FULL SCREEN ======== */
+body.profile-organisasi{
+    background:#0f2f4f;
+    padding-top:90px;
+    display:flex;
+    flex-direction:column;
+    min-height:100vh;
+}
+
+body.profile-organisasi .struktur-full{
+    flex:1;
+    width:100%;
+    background:#0f2f4f;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:0;
+}
+
+body.profile-organisasi .struktur-full img{
+    max-width:100%;
+    max-height:100%;
+    height:auto;
+    width:auto;
+    display:block;
+}
+
+body.profile-organisasi footer{
+    margin-top:auto;
+}
