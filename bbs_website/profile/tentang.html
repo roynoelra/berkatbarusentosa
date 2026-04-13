@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Profil Perusahaan - CV. Berkat Baru Sentosa</title>
+
+<!-- Font Awesome -->
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<link rel="stylesheet" href="../css/style.css">
+
+<style>
+
+/* ================= LAYOUT TENTANG ================= */
+
+.about-section{
+max-width:1200px;
+margin:auto;
+display:flex;
+gap:80px;
+align-items:flex-start;
+flex-wrap:wrap;
+}
+
+/* ================= TEKS KIRI ================= */
+
+.profile-content{
+flex:1;
+min-width:320px;
+border-left:5px solid #1b2d3a;
+padding-left:30px;
+}
+
+.profile-content p{
+font-size:17px;
+line-height:1.9;
+margin-bottom:28px;
+text-align:justify;
+color:#2e3f4f;
+}
+
+/* ================= FLOWCHART KANAN ================= */
+
+.chart-wrapper{
+flex:1;
+min-width:300px;
+display:flex;
+justify-content:center;
+}
+
+.company-flow{
+display:flex;
+flex-direction:column;
+align-items:center;
+gap:20px;
+}
+
+.flow-box{
+background:#1b2d3a;
+color:white;
+padding:18px 30px;
+border-radius:10px;
+text-align:center;
+font-weight:600;
+min-width:260px;
+box-shadow:0 10px 25px rgba(0,0,0,0.1);
+}
+
+.flow-box.light{
+background:#f1f5f8;
+color:#1b2d3a;
+border:1px solid #dbe4ec;
+}
+
+.flow-line{
+width:2px;
+height:40px;
+background:#1b2d3a;
+}
+
+/* ================= VISI MISI ================= */
+
+.vm-section{
+background:#f8fafc;
+}
+
+.vm-title{
+text-align:center;
+font-size:28px;
+font-weight:600;
+margin-bottom:50px;
+}
+
+.vm-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+max-width:1000px;
+margin:auto;
+}
+
+.vm-card{
+background:white;
+padding:35px;
+border-radius:10px;
+border:1px solid #e2e8f0;
+}
+
+.vm-card h3{
+margin-top:0;
+margin-bottom:20px;
+font-size:22px;
+}
+
+.vm-card ul{
+padding-left:20px;
+margin:0;
+}
+
+.vm-card li{
+margin-bottom:12px;
+line-height:1.6;
+}
+
+/* ================= LOKASI ================= */
+
+.location-wrapper{
+max-width:1000px;
+margin:auto;
+display:flex;
+flex-direction:column;
+gap:80px;
+}
+
+.location-block{
+display:flex;
+gap:40px;
+align-items:center;
+flex-wrap:wrap;
+}
+
+.location-text{
+flex:1;
+min-width:280px;
+}
+
+.location-text h3{
+margin-top:0;
+margin-bottom:15px;
+font-size:22px;
+}
+
+.location-text p{
+font-size:16px;
+line-height:1.7;
+margin-bottom:20px;
+}
+
+.map-wrapper{
+flex:1;
+min-width:300px;
+border-radius:10px;
+overflow:hidden;
+border:1px solid #e2e8f0;
+}
+
+.map-wrapper iframe{
+width:100%;
+height:320px;
+border:0;
+}
+
+.map-link{
+display:inline-block;
+padding:10px 22px;
+border-radius:30px;
+background:#1b2d3a;
+color:white;
+text-decoration:none;
+font-size:14px;
+}
+
+.map-link:hover{
+opacity:0.85;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:900px){
+
+.about-section{
+flex-direction:column;
+gap:60px;
+}
+
+.vm-grid{
+grid-template-columns:1fr;
+}
+
+.location-block{
+flex-direction:column;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header id="mainHeader">
+<div class="container">
+<h1 class="logo">CV. Berkat Baru Sentosa</h1>
+
+<nav>
+<a href="../home.html"><i class="fa-solid fa-house"></i></a>
+
+<div class="dropdown">
+<span class="dropbtn active">Company ▾</span>
+<div class="dropdown-content">
+<a href="tentang.html" class="active">Tentang Kami</a>
+<a href="pengurus.html">Pengurus Badan Usaha</a>
+<a href="organisasi.html">Struktur Organisasi</a>
+<a href="customer.html">Customer</a>
+</div>
+</div>
+
+<a href="../layanan.html">Layanan</a>
+</nav>
+</div>
+</header>
+
+<section class="sub-hero">
+<h2>Tentang Kami</h2>
+</section>
+
+<!-- ================= TENTANG ================= -->
+
+<section>
+<div class="about-section">
+
+<div class="profile-content">
+
+<p>
+CV. Berkat Baru Sentosa adalah perusahaan yang bergerak di bidang supplier dan trading yang didirikan pada tahun 2022.
+</p>
+
+<p>
+Berkantor pusat di Desa Lalampu, Morowali, Sulawesi Tengah, serta didukung oleh fungsi administrasi dan logistik di jalan Hati Murni Makassar, Sulawesi Selatan.
+</p>
+
+<p>
+Kami menekankan pada ketersediaan barang yang sesuai standar serta proses pengadaan yang tertib dan tepat sasaran, dengan pelayanan profesional dalam menjaga kepercayaan dan kepuasan pelanggan maupun rekanan.
+</p>
+
+<p>
+Dengan komitmen terhadap kualitas dan tanggung jawab, CV. Berkat Baru Sentosa siap menjadi referensi serta mitra kerja bagi berbagai perusahaan lainnya.
+</p>
+
+</div>
+
+<!-- FLOWCHART -->
+
+<div class="chart-wrapper">
+<div class="company-flow">
+
+<div class="flow-box">
+Didirikan<br>2022
+</div>
+
+<div class="flow-line"></div>
+
+<div class="flow-box light">
+Head Office<br>Morowali
+</div>
+
+<div class="flow-line"></div>
+
+<div class="flow-box light">
+Administration Department<br>Makassar
+</div>
+
+</div>
+</div>
+
+</div>
+</section>
+
+<!-- ================= VISI MISI ================= -->
+
+<section class="vm-section">
+
+<div class="vm-title">Visi & Misi</div>
+
+<div class="vm-grid">
+
+<div class="vm-card">
+<h3>Visi</h3>
+<ul>
+<li>Menjadi perusahaan supplier dan trading yang maju dan berkembang.</li>
+<li>Menyediakan kebutuhan pengadaan secara efisien dan efektif.</li>
+<li>Memberikan nilai kepuasan terbaik melalui pelayanan dan produk berkualitas.</li>
+</ul>
+</div>
+
+<div class="vm-card">
+<h3>Misi</h3>
+<ul>
+<li>Membuka peluang usaha yang produktif dalam mendukung perekonomian.</li>
+<li>Membangun kerja sama yang saling menguntungkan dengan seluruh mitra.</li>
+<li>Menjaga kualitas, kuantitas, serta kepuasan pelanggan secara konsisten.</li>
+</ul>
+</div>
+
+</div>
+</section>
+
+<!-- ================= LOKASI ================= -->
+
+<section>
+
+<h2 style="text-align:center;margin-bottom:60px;">Lokasi Kami</h2>
+
+<div class="location-wrapper">
+
+<div class="location-block">
+<div class="location-text">
+<h3>Head Office</h3>
+<p>
+Desa Keurea,<br>
+Kec. Bahodopi,<br>
+Kab. Morowali,<br>
+Sulawesi Tengah 94974
+</p>
+<a href="https://maps.app.goo.gl/ntNNFHmC5g5c34ns7" target="_blank" class="map-link">
+Lihat di Google Maps
+</a>
+</div>
+
+<div class="map-wrapper">
+<iframe src="https://maps.google.com/maps?q=Bahodopi%20Morowali&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+</div>
+</div>
+
+<div class="location-block">
+<div class="location-text">
+<h3>Administration Department</h3>
+<p>
+Jl. Hati Murni No.28C,<br>
+Mattoangin,<br>
+Kec. Mariso,<br>
+Kota Makassar,<br>
+Sulawesi Selatan 90126
+</p>
+<a href="https://maps.app.goo.gl/cw2jnmD2cybw2ecMA" target="_blank" class="map-link">
+Lihat di Google Maps
+</a>
+</div>
+
+<div class="map-wrapper">
+<iframe src="https://maps.google.com/maps?q=Jl%20Hati%20Murni%20Makassar&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+</div>
+</div>
+
+</div>
+</section>
+
+<footer>
+
+    <div class="footer-links">
+
+        <div class="footer-column">
+            <h4>Company Information</h4>
+            <a href="profile/tentang.html">Tentang Kami</a>
+            <a href="profile/pengurus.html">Pengurus Badan Usaha</a>
+            <a href="profile/organisasi.html">Struktur Organisasi</a>
+            <a href="profile/customer.html">Customer</a>
+        </div>
+
+        <div class="footer-column">
+            <h4>Required Materials List</h4>
+            <ul>
+                <li><a href="layanan.html#a">Subkategori Material</a></li>
+                <li><a href="layanan.html#b">Subkategori Peralatan & Mesin</a></li>
+                <li><a href="layanan.html#c">Subkategori Operasional & Pendukung Industri</a></li>
+                <li><a href="layanan.html#d">Subkategori Fasilitas & Perkantoran</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <h4>For More Information</h4>
+            <div class="footer-icons">
+                <a href="mailto:berkat.baru.sentosa@gmail.com">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+                <a href="https://wa.me/6281359559202" target="_blank">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        Copyright © 2026 CV. Berkat Baru Sentosa
+    </div>
+
+</footer>
+
+<script>
+window.addEventListener("scroll",function(){
+const header=document.getElementById("mainHeader");
+if(window.scrollY>40){
+header.classList.add("scrolled");
+}else{
+header.classList.remove("scrolled");
+}
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Customer - CV. Berkat Baru Sentosa</title>
+
+<!-- Font Awesome -->
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<link rel="stylesheet" href="../css/style.css">
+
+<style>
+
+/* ================= GLOBAL ================= */
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    background: #ffffff;
+    color: #1b2d3a;
+}
+
+/* ================= HEADER ================= */
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background: #ffffff;
+    padding: 22px 0;
+    transition: 0.35s ease;
+    z-index: 1000;
+}
+
+header.scrolled {
+    padding: 14px 0;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+}
+
+.logo {
+    font-weight: 700;
+}
+
+/* ================= HERO ================= */
+
+.sub-hero {
+    padding-top: 170px;
+    padding-bottom: 110px;
+    text-align: center;
+    background: linear-gradient(120deg, #0f2027, #203a43, #2c5364);
+    color: white;
+}
+
+.sub-hero h2 {
+    font-size: 44px;
+    font-weight: 700;
+}
+
+/* ================= CONTENT ================= */
+
+.customer-section {
+    padding: 120px 60px;
+    max-width: 1400px;
+    margin: auto;
+}
+
+/* Top Summary */
+
+.customer-summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 80px;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.summary-text {
+    max-width: 600px;
+}
+
+.summary-text h3 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.summary-text p {
+    font-size: 17px;
+    line-height: 1.9;
+    color: #455a64;
+}
+
+.summary-stat {
+    background: #1b2d3a;
+    color: white;
+    padding: 40px 60px;
+    border-radius: 16px;
+    text-align: center;
+    min-width: 220px;
+}
+
+.summary-stat h4 {
+    font-size: 48px;
+    margin: 0;
+}
+
+.summary-stat span {
+    font-size: 14px;
+    opacity: 0.8;
+    letter-spacing: 1px;
+}
+
+/* ================= TABLE ================= */
+
+.table-wrapper {
+    background: #ffffff;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 25px 60px rgba(0,0,0,0.05);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead {
+    background: #1b2d3a;
+    color: white;
+}
+
+th, td {
+    padding: 20px 24px;
+    border: 1px solid #e0e6eb;
+}
+
+th {
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+td {
+    font-size: 16px;
+    color: #2e3f4f;
+}
+
+tbody tr:nth-child(even) {
+    background: #fafcfd;
+}
+
+tbody tr:hover {
+    background: #f1f5f8;
+    transition: 0.3s ease;
+}
+
+td:first-child {
+    width: 70px;
+    text-align: center;
+    font-weight: 600;
+}
+
+/* Clickable company name */
+
+.company-link {
+    color: #1b2d3a;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+.company-link:hover {
+    color: #2c5364;
+    text-decoration: underline;
+}
+
+@media(max-width: 900px) {
+.customer-summary {
+    flex-direction: column;
+    align-items: flex-start;
+}
+.summary-stat {
+    width: 100%;
+}
+}
+
+</style>
+</head>
+<body>
+
+<header id="mainHeader">
+<div class="container">
+<h1 class="logo">CV. Berkat Baru Sentosa</h1>
+
+<nav>
+<a href="../home.html"><i class="fa-solid fa-house"></i></a>
+
+<div class="dropdown">
+<span class="dropbtn active">Company ▾</span>
+<div class="dropdown-content">
+<a href="tentang.html" class="active">Tentang Kami</a>
+<a href="pengurus.html">Pengurus Badan Usaha</a>
+<a href="organisasi.html">Struktur Organisasi</a>
+<a href="customer.html">Customer</a>
+</div>
+</div>
+
+<a href="../layanan.html">Layanan</a>
+</nav>
+</div>
+</header>
+
+<section class="sub-hero">
+<h2>Customer</h2>
+</section>
+
+<section class="customer-section">
+
+<div class="customer-summary">
+
+<div class="summary-text">
+<h3>Kepercayaan adalah Aset Utama</h3>
+<p>
+Kami selalu menekankan pada persediaan barang yang berkualitas, sehingga
+kami siap melaksanakan kerjasama jangka panjang dan saling menguntungkan dengan
+memberikan pelayanan terbaik serta menjaga kepuasan pelanggan.
+</p>
+</div>
+
+<div class="summary-stat">
+<h4>13</h4>
+<span>Customer Perusahaan</span>
+</div>
+
+</div>
+
+<div class="table-wrapper">
+<table>
+<thead>
+<tr>
+<th>No</th>
+<th>Nama Perusahaan</th>
+</tr>
+</thead>
+<tbody>
+
+<tr>
+<td>1</td>
+<td><a class="company-link" target="_blank" href="https://www.google.com/search?q=PT.+MERDEKA+TSINGSHAN+INDONESIA">PT. MERDEKA TSINGSHAN INDONESIA</a></td>
+</tr>
+
+<tr>
+<td>2</td>
+<td><a class="company-link" target="_blank" href="https://www.google.com/search?q=PT.+SULAWESI+CAHAYA+MINERAL">PT. SULAWESI CAHAYA MINERAL</a></td>
+</tr>
+
+<tr>
+<td>3</td>
+<td><a class="company-link" target="_blank" href="https://www.google.com/search?q=PT.+MERDEKA+MINING+SERVIS">PT. MERDEKA MINING SERVIS</a></td>
+</tr>
+
+<tr>
+<td>4</td>
+<td><a class="company-link" target="_blank" href="https://www.google.com/search?q=PT.+TEKNOLOGI+INFRASTRUKTUR+INDONESIA">PT. TEKNOLOGI INFRASTRUKTUR INDONESIA</a></td>
+</tr>
+
+<tr>
+<td>5</td>
+<td><a class="company-link" target="_blank" href="https://www.google.com/search?q=PT.+SINAR+TERANG+MANDIRI">PT. SINAR TERANG MANDIRI</a></td>
+</tr>
+
+<tr>
+<td>6</td>
+<td><a class="company-link" target="_blank" href="https://www.google.com/search?q=PT.+HILLCON+JAYA+SAKTI">PT. HILLCON JAYA SAKTI</a></td>
+</tr>
+
+<tr>
+<td>7</td>
+<td><a class="company-link" target="_blank" href="https://www.google.com/search?q=PT.+RAJAWALI+EMAS+ANCORA+LESTARI">PT. RAJAWALI EMAS ANCORA LESTARI</a></td>
+</tr>
+
+<tr>
+<td>8</td>
+<td><a class="company-link" target="_blank" href="https://www.google.com/search?q=PT.+CAHAYA+GINDA+GANDA">PT. CAHAYA GINDA GANDA</a></td>
+</tr>
+
+<tr>
+<td>9</td>
+<td><a class="company-link" target="_blank" href="https://www.google.com/search?q=PT.+MINARTA+DUTAHUTAMA">PT. MINARTA DUTAHUTAMA</a></td>
+</tr>
+
+<tr>
+<td>10</td>
+<td><a class="company-link" target="_blank" href="https://www.google.com/search?q=PT.+BINA+BANGUN+ESA">PT. BINA BANGUN ESA</a></td>
+</tr>
+
+<tr>
+<td>11</td>
+<td><a class="company-link" target="_blank" href="https://www.google.com/search?q=PT.+KEINZ+VEINTURA">PT. KEINZ VEINTURA</a></td>
+</tr>
+
+<tr>
+<td>12</td>
+<td><a class="company-link" target="_blank" href="https://www.google.com/search?q=DYANDRA+ASTAGINA">DYANDRA ASTAGINA</a></td>
+</tr>
+
+<tr>
+<td>13</td>
+<td><a class="company-link" target="_blank" href="https://www.google.com/search?q=SAMUDRA+ABADI+MULIA">SAMUDRA ABADI MULIA</a></td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+</section>
+
+<footer>
+
+    <div class="footer-links">
+
+        <div class="footer-column">
+            <h4>Company Information</h4>
+            <a href="profile/tentang.html">Tentang Kami</a>
+            <a href="profile/pengurus.html">Pengurus Badan Usaha</a>
+            <a href="profile/organisasi.html">Struktur Organisasi</a>
+            <a href="profile/customer.html">Customer</a>
+        </div>
+
+        <div class="footer-column">
+            <h4>Required Materials List</h4>
+            <ul>
+                <li><a href="layanan.html#a">Subkategori Material</a></li>
+                <li><a href="layanan.html#b">Subkategori Peralatan & Mesin</a></li>
+                <li><a href="layanan.html#c">Subkategori Operasional & Pendukung Industri</a></li>
+                <li><a href="layanan.html#d">Subkategori Fasilitas & Perkantoran</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <h4>For More Information</h4>
+            <div class="footer-icons">
+                <a href="mailto:berkat.baru.sentosa@gmail.com">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+                <a href="https://wa.me/6281359559202" target="_blank">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        Copyright © 2026 CV. Berkat Baru Sentosa
+    </div>
+
+</footer>
+
+<script>
+window.addEventListener("scroll", function() {
+const header = document.getElementById("mainHeader");
+if (window.scrollY > 40) {
+header.classList.add("scrolled");
+} else {
+header.classList.remove("scrolled");
+}
+});
+</script>
+
+</body>
+</html>
